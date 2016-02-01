@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title></title>
+      <meta charset="utf-8">
+      <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
+      <link href="css/style.css" rel="stylesheet">
+      <link rel="stylesheet" href="//cdn.datatables.net/1.10.5/css/jquery.dataTables.css">
+  </head>
+  <body>
+    <span>Prime search</span>
+
+    <div class="clearfix">
+      <div class="left">
+        <div>
+          <span>State:</span>
+          <span class="state-value">not running</span>
+        </div>
+        <div>
+          <span>Numbers enumerated:</span>
+          <span class="enumerated-value">0</span>
+        </div>
+        <div>
+          <span>Primes found:</span>
+          <span class="primes-value">0</span>
+        </div>
+      </div>
+      <div class="right">
+        <div>
+          <span>Application ran:</span>
+          <span class="ran-value">-</span>
+        </div>
+        <div>
+          <span>Total operating time:</span>
+          <span class="total-time-value">0\</span>
+        </div>
+        <div>
+          <span>Max:</span>
+          <span class="max-value">-</span>
+          <span> / </span>
+          <span>Min:</span>
+          <span class="min-value">-</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button class="start-stop">Start</button>
+    </div>
+    <div>
+      <div class="left">
+        <button class="show-found">Show found numbers</button>
+        <div class="table-container"></div>
+      </div>
+      <div class="right">
+        <div>
+          <button class="show-image">Show as image</button>
+        </div>
+        <canvas class="image"></canvas>
+      </div>
+    </div>
+  </body>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ramda/0.10.0/ramda.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="//cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+  <script src="db.js"></script>
+  <script src="storage.js"></script>
+  <script src="app.js"></script>
+</html>
